@@ -312,13 +312,13 @@ typedef NS_ENUM(NSUInteger, AlertType)
 						{
 							if (YES == [obj isKindOfClass:[NSString class]])
 							{
-								_strOwnId = [NSString stringWithFormat:@"your ID: %@", obj];
+                                _strOwnId = (NSString *)obj;
                                 
-								UILabel* lbl = (UILabel*)[self.view viewWithTag:TAG_ID];
-								if (nil != lbl)
-								{
-									[lbl setText:_strOwnId];
-									[lbl setNeedsDisplay];
+                                UILabel* lbl = (UILabel*)[self.view viewWithTag:TAG_ID];
+                                if (nil != lbl)
+                                {
+                                    [lbl setText:[NSString stringWithFormat:@"your ID:\n %@", _strOwnId]];
+                                    [lbl setNeedsDisplay];
 								}
 							}
 							

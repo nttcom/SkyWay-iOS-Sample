@@ -322,12 +322,12 @@ typedef NS_ENUM(NSUInteger, DataType)
                         {
                             if (YES == [obj isKindOfClass:[NSString class]])
                             {
-                                _strOwnId = [NSString stringWithFormat:@"your ID:\n %@", obj];
+                                _strOwnId = (NSString *)obj;
                                 
                                 UILabel* lbl = (UILabel*)[self.view viewWithTag:TAG_ID];
                                 if (nil != lbl)
                                 {
-                                    [lbl setText:_strOwnId];
+                                    [lbl setText:[NSString stringWithFormat:@"your ID:\n %@", _strOwnId]];
                                     [lbl setNeedsDisplay];
                                 }
                             }
