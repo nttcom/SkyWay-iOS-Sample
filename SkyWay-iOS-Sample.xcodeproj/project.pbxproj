@@ -29,6 +29,7 @@
 		CA30CBFF1AE4E53C00A78322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAABD7519D5644200C765E1 /* Main.storyboard */; };
 		CA6859CB1B1BE47200B9577E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6859CA1B1BE47200B9577E /* image.png */; };
 		CA6859DB1B1E886500B9577E /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6859DA1B1E886500B9577E /* SkyWay.framework */; };
+		CAAAD30D1B218DB500443268 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAAD30C1B218DB500443268 /* SkyWay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		3DDB8D9A1A314C3C00FA2C4A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		CA6859CA1B1BE47200B9577E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		CA6859DA1B1E886500B9577E /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
+		CAAAD30C1B218DB500443268 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "../SkyWay-iOS-SDK/SkyWay.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				3DD0C75B19E7B6BD006F9103 /* Foundation.framework in Frameworks */,
 				3DDB8D9B1A314C3C00FA2C4A /* GLKit.framework in Frameworks */,
 				3DDB8D971A314B2F00FA2C4A /* SystemConfiguration.framework in Frameworks */,
+				CAAAD30D1B218DB500443268 /* SkyWay.framework in Frameworks */,
 				CA6859DB1B1E886500B9577E /* SkyWay.framework in Frameworks */,
 				3D1DDB6B1A25B9620052B79C /* libc++.dylib in Frameworks */,
 				3D1DDB611A2588320052B79C /* libicucore.dylib in Frameworks */,
@@ -89,6 +92,7 @@
 		3DAABD5F19D5644200C765E1 = {
 			isa = PBXGroup;
 			children = (
+				CAAAD30C1B218DB500443268 /* SkyWay.framework */,
 				CA6859DA1B1E886500B9577E /* SkyWay.framework */,
 				3DF7608D19D910FC0084F124 /* Framework */,
 				3DAABD6919D5644200C765E1 /* Products */,

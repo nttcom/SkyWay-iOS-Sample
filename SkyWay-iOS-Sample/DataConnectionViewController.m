@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, DataType)
 };
 
 @interface DataConnectionViewController ()
-< UINavigationControllerDelegate, UIAlertViewDelegate, UIActionSheetDelegate >
+< UINavigationControllerDelegate, UIAlertViewDelegate, UIActionSheetDelegate, UIPopoverControllerDelegate >
 {
     SKWPeer*				_peer;
     SKWDataConnection*	_dataConnection;
@@ -48,6 +48,8 @@ typedef NS_ENUM(NSUInteger, DataType)
     
     NSString*			_strOwnId;
     BOOL				_bConnected;
+    
+    UIPopoverController*	_pc;
     
     NSArray*			_arySerializationTypes;
     NSArray*			_aryDataTypes;
@@ -840,7 +842,21 @@ typedef NS_ENUM(NSUInteger, DataType)
                 iIndex++;
             }
             
-            [self presentViewController:ac animated:YES completion:nil];
+            if (UIUserInterfaceIdiomPad == [UIDevice currentDevice].userInterfaceIdiom)
+            {
+                UIView* vw = [self.view viewWithTag:TAG_DATA_TYPE];
+                _pc = [[UIPopoverController alloc] initWithContentViewController:ac];
+                [_pc setDelegate:self];
+                
+                dispatch_async(dispatch_get_main_queue(), ^
+                               {
+                                   [_pc presentPopoverFromRect:vw.bounds inView:vw permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+                               });
+            }
+            else
+            {
+                [self presentViewController:ac animated:YES completion:nil];
+            }
         }
         else
         {
@@ -860,7 +876,14 @@ typedef NS_ENUM(NSUInteger, DataType)
             
             as.tag = AS_DATA_TYPE;
             
-            [as showInView:self.view.window];
+            if (UIUserInterfaceIdiomPad == [UIDevice currentDevice].userInterfaceIdiom)
+            {
+                [as showFromRect:btn.frame inView:self.view animated:YES];
+            }
+            else
+            {
+                [as showInView:self.view.window];
+            }
         }
     }
     else if (TAG_SEND_DATA == btn.tag)
