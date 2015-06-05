@@ -317,7 +317,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
                                 UILabel* lbl = (UILabel*)[self.view viewWithTag:TAG_ID];
                                 if (nil != lbl)
                                 {
-                                    [lbl setText:[NSString stringWithFormat:@"your ID:\n %@", _strOwnId]];
+                                    [lbl setText:[NSString stringWithFormat:@"your ID: %@", _strOwnId]];
                                     [lbl setNeedsDisplay];
 								}
 							}
