@@ -183,11 +183,13 @@ typedef NS_ENUM(NSUInteger, AlertType)
 	CGRect rcId = rcScreen;
 	rcId.size.width = (rcScreen.size.width / 3.0f) * 2.0f;
 	rcId.size.height = fnt.lineHeight * 2.0f;
-	UILabel* lblId = [[UILabel alloc] initWithFrame:rcId];
-	[lblId setTag:TAG_ID];
-	[lblId setFont:fnt];
-	[lblId setTextAlignment:NSTextAlignmentCenter];
-	[lblId setText:@"your ID: ---"];
+
+    UILabel* lblId = [[UILabel alloc] initWithFrame:rcId];
+    [lblId setTag:TAG_ID];
+    [lblId setFont:fnt];
+    [lblId setTextAlignment:NSTextAlignmentCenter];
+    lblId.numberOfLines = 2;
+    [lblId setText:@"your ID:\n ---"];
     [lblId setBackgroundColor:[UIColor whiteColor]];
 	
 	[self.view addSubview:lblId];
@@ -317,7 +319,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
                                 UILabel* lbl = (UILabel*)[self.view viewWithTag:TAG_ID];
                                 if (nil != lbl)
                                 {
-                                    [lbl setText:[NSString stringWithFormat:@"your ID: %@", _strOwnId]];
+                                    [lbl setText:[NSString stringWithFormat:@"your ID: \n%@", _strOwnId]];
                                     [lbl setNeedsDisplay];
 								}
 							}
