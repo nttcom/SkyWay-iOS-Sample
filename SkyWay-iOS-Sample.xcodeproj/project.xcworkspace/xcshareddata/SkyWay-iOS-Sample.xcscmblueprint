@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B38D6BF62FB2EEA18B31311BC19878E41A33ACC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8B38D6BF62FB2EEA18B31311BC19878E41A33ACC" : 0,
+    "8820C20CBE3EB3588FEB0A9C801A88BA091A7A1A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "31F1D4F2-C29C-41F6-A6B0-34E375405C46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8B38D6BF62FB2EEA18B31311BC19878E41A33ACC" : "SkyWay-iOS-Sample\/",
+    "8820C20CBE3EB3588FEB0A9C801A88BA091A7A1A" : "SkyWay-iOS-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SkyWay-iOS-Sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SkyWay-iOS-Sample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nttcom\/SkyWay-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8820C20CBE3EB3588FEB0A9C801A88BA091A7A1A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nttcom\/SkyWay-iOS-Sample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B38D6BF62FB2EEA18B31311BC19878E41A33ACC"
+    }
+  ]
+}

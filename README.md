@@ -14,7 +14,11 @@ Sample application of SkyWayiOSSDK
 static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
 ```
----
+
+## NOTICE
+This application requires v0.2.0+ of SkyWay iOS SDK.
+
+------
 
 ## ビルド方法
  1. [SkyWay](http://nttcom.github.io/skyway/)でアカウントを作成し、APIkeyを取得
@@ -23,8 +27,13 @@ static NSString *const kDomain = @"yourDomain";
  1. "SkyWay.framework"をプロジェクトのBuild Phasesの"Link Binary With Libraries"に追加
   1. "SkyWay.framework"は[SkyWay](http://nttcom.github.io/skyway/)からダウンロード
  1. "DataConnectionViewController.m" と "MediaConnectionViewController.m"の上部にあるkAPIKeyとkDomainにAPIkeyとDomainを入力し、ビルド
+
 ```objective-c
 // Enter your APIkey and Domain
 // Please check this page. >> https://skyway.io/ds/
 static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
+```
+
+## 注意事項
+本アプリケーションはSkyWay iOS SDKのv0.2.0以降で動作します。

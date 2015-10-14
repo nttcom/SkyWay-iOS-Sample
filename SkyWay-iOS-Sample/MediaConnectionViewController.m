@@ -80,7 +80,6 @@ typedef NS_ENUM(NSUInteger, AlertType)
     option.key = kAPIkey;
     option.domain = kDomain;
     
-    
     // SKWPeer has many options. Please check the document. >> http://nttcom.github.io/skyway/docs/
     
     
@@ -101,8 +100,8 @@ typedef NS_ENUM(NSUInteger, AlertType)
 	[SKWNavigator initialize:_peer];
     
 	SKWMediaConstraints* constraints = [[SKWMediaConstraints alloc] init];
-	constraints.maxWidth = 540;
-	constraints.maxHeight = 960;
+	constraints.maxWidth = 960;
+	constraints.maxHeight = 540;
     //	constraints.cameraPosition = SKW_CAMERA_POSITION_BACK;
     constraints.cameraPosition = SKW_CAMERA_POSITION_FRONT;
     
@@ -138,9 +137,18 @@ typedef NS_ENUM(NSUInteger, AlertType)
 
 	// Initialize Remote video view
     CGRect rcRemote = CGRectZero;
-    rcRemote.size.width = rcScreen.size.width;
-    rcRemote.size.height = rcScreen.size.width;
-    
+    if (UIUserInterfaceIdiomPad == [UIDevice currentDevice].userInterfaceIdiom)
+    {
+        // iPad
+        rcRemote.size.width = 480.0f;
+        rcRemote.size.height = 480.0f;
+    }
+    else
+    {
+        // iPhone / iPod touch
+        rcRemote.size.width = rcScreen.size.width;
+        rcRemote.size.height = rcRemote.size.width;
+    }
     rcRemote.origin.x = (rcScreen.size.width - rcRemote.size.width) / 2.0f;
     rcRemote.origin.y = (rcScreen.size.height - rcRemote.size.height) / 2.0f;
     rcRemote.origin.y -= 8.0f;
@@ -148,10 +156,19 @@ typedef NS_ENUM(NSUInteger, AlertType)
     
     // Initialize Local video view
     CGRect rcLocal = CGRectZero;
-    rcLocal.size.width = 140.0f;
-    rcLocal.size.height = 140.0f;
+    if (UIUserInterfaceIdiomPad == [UIDevice currentDevice].userInterfaceIdiom)
+    {
+        rcLocal.size.width = rcScreen.size.width / 5.0f;
+        rcLocal.size.height = rcScreen.size.height / 5.0f;
+    }
+    else
+    {
+        rcLocal.size.width = rcScreen.size.height / 5.0f;
+        rcLocal.size.height = rcLocal.size.width;
+    }
     rcLocal.origin.x = rcScreen.size.width - rcLocal.size.width - 8.0f;
     rcLocal.origin.y = rcScreen.size.height - rcLocal.size.height - 8.0f;
+    rcLocal.origin.y -= self.navigationController.toolbar.frame.size.height;
     
     
     
@@ -205,9 +222,23 @@ typedef NS_ENUM(NSUInteger, AlertType)
 	[btnCall setTitle:@"Call to" forState:UIControlStateNormal];
 	[btnCall setBackgroundColor:[UIColor lightGrayColor]];
 	[btnCall addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-	[btnCall setEnabled:NO];
 
 	[self.view addSubview:btnCall];
+    
+    // Change Camera
+    CGRect rcChange = rcScreen;
+    rcChange.size.width = rcScreen.size.width;
+    rcChange.size.height = fnt.lineHeight * 2.0f;
+    rcChange.origin.y = rcScreen.size.height - rcChange.size.height;
+    
+    UIButton* btnChange = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnChange setFrame:rcChange];
+    [btnChange setTitle:@"Change Camera" forState:UIControlStateNormal];
+    [btnChange setBackgroundColor:[UIColor whiteColor]];
+    [btnChange addTarget:self action:@selector(cycleLocalCamera) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnChange];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -428,6 +459,30 @@ typedef NS_ENUM(NSUInteger, AlertType)
 	[media on:SKW_MEDIACONNECTION_EVENT_STREAM callback:nil];
 	[media on:SKW_MEDIACONNECTION_EVENT_CLOSE callback:nil];
 	[media on:SKW_MEDIACONNECTION_EVENT_ERROR callback:nil];
+}
+
+- (void)cycleLocalCamera
+{
+    if (nil == _msLocal)
+    {
+        return;
+    }
+    
+    SKWCameraPositionEnum pos = [_msLocal getCameraPosition];
+    if (SKW_CAMERA_POSITION_BACK == pos)
+    {
+        pos = SKW_CAMERA_POSITION_FRONT;
+    }
+    else if (SKW_CAMERA_POSITION_FRONT == pos)
+    {
+        pos = SKW_CAMERA_POSITION_BACK;
+    }
+    else
+    {
+        return;
+    }
+    
+    [_msLocal setCameraPosition:pos];
 }
 
 

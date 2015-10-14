@@ -28,8 +28,9 @@
 		CA30CBFE1AE4E53A00A78322 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAABD7A19D5644200C765E1 /* LaunchScreen.xib */; };
 		CA30CBFF1AE4E53C00A78322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAABD7519D5644200C765E1 /* Main.storyboard */; };
 		CA6859CB1B1BE47200B9577E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6859CA1B1BE47200B9577E /* image.png */; };
-		CA6859DB1B1E886500B9577E /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6859DA1B1E886500B9577E /* SkyWay.framework */; };
-		CAAAD30D1B218DB500443268 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAAD30C1B218DB500443268 /* SkyWay.framework */; };
+		CA6C359B1BCE09A800F99F7D /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C359A1BCE09A800F99F7D /* SkyWay.framework */; settings = {ASSET_TAGS = (); }; };
+		CAD2621C1B8E9EAF000D4782 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */; };
+		CAD2621D1B8E9EAF000D4782 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +62,9 @@
 		3DDB8D981A314B5B00FA2C4A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		3DDB8D9A1A314C3C00FA2C4A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		CA6859CA1B1BE47200B9577E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		CA6859DA1B1E886500B9577E /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
-		CAAAD30C1B218DB500443268 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "../SkyWay-iOS-SDK/SkyWay.framework"; sourceTree = "<group>"; };
+		CA6C359A1BCE09A800F99F7D /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "SkyWay-iOS-Sample/frameworks/SkyWay.framework"; sourceTree = "<group>"; };
+		CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD2621C1B8E9EAF000D4782 /* CoreVideo.framework in Frameworks */,
+				CAD2621D1B8E9EAF000D4782 /* VideoToolbox.framework in Frameworks */,
 				3D1DDB5D1A2585CC0052B79C /* AudioToolbox.framework in Frameworks */,
 				3D1DDB6F1A25B98E0052B79C /* AVFoundation.framework in Frameworks */,
 				3DDB8D951A314AFD00FA2C4A /* CoreGraphics.framework in Frameworks */,
@@ -77,9 +81,8 @@
 				3DD0C75B19E7B6BD006F9103 /* Foundation.framework in Frameworks */,
 				3DDB8D9B1A314C3C00FA2C4A /* GLKit.framework in Frameworks */,
 				3DDB8D971A314B2F00FA2C4A /* SystemConfiguration.framework in Frameworks */,
-				CAAAD30D1B218DB500443268 /* SkyWay.framework in Frameworks */,
-				CA6859DB1B1E886500B9577E /* SkyWay.framework in Frameworks */,
 				3D1DDB6B1A25B9620052B79C /* libc++.dylib in Frameworks */,
+				CA6C359B1BCE09A800F99F7D /* SkyWay.framework in Frameworks */,
 				3D1DDB611A2588320052B79C /* libicucore.dylib in Frameworks */,
 				3D1DDB631A258ABF0052B79C /* libsqlite3.dylib in Frameworks */,
 				3DDB8D991A314B5B00FA2C4A /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -92,8 +95,6 @@
 		3DAABD5F19D5644200C765E1 = {
 			isa = PBXGroup;
 			children = (
-				CAAAD30C1B218DB500443268 /* SkyWay.framework */,
-				CA6859DA1B1E886500B9577E /* SkyWay.framework */,
 				3DF7608D19D910FC0084F124 /* Framework */,
 				3DAABD6919D5644200C765E1 /* Products */,
 				3DAABD6A19D5644200C765E1 /* SkyWay-iOS-Sample */,
@@ -142,6 +143,9 @@
 		3DF7608D19D910FC0084F124 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CA6C359A1BCE09A800F99F7D /* SkyWay.framework */,
+				CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */,
+				CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */,
 				3D1DDB5C1A2585CC0052B79C /* AudioToolbox.framework */,
 				3D1DDB6E1A25B98E0052B79C /* AVFoundation.framework */,
 				3D9398EB19D9390B00AEE6B1 /* CoreGraphics.framework */,
@@ -183,7 +187,7 @@
 		3DAABD6019D5644200C765E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					3DAABD6719D5644200C765E1 = {
@@ -281,6 +285,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -298,7 +303,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -351,18 +356,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SkyWay-iOS-Sample/frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/SkyWay-iOS-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.SkyWay-iOS-Sample";
 				PRODUCT_NAME = "SkyWay-iOS-Sample";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Debug;
 		};
@@ -373,20 +380,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SkyWay-iOS-Sample/frameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/SkyWay-iOS-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.SkyWay-iOS-Sample";
 				PRODUCT_NAME = "SkyWay-iOS-Sample";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = armv7;
-				"VALID_ARCHS[sdk=iphoneos*]" = "$(inherited)";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = armv7;
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Release;
 		};
