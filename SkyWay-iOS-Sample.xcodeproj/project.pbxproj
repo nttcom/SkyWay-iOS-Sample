@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D1DDB5D1A2585CC0052B79C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1DDB5C1A2585CC0052B79C /* AudioToolbox.framework */; };
-		3D1DDB611A2588320052B79C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1DDB601A2588320052B79C /* libicucore.dylib */; };
-		3D1DDB631A258ABF0052B79C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1DDB621A258ABF0052B79C /* libsqlite3.dylib */; };
-		3D1DDB6B1A25B9620052B79C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1DDB6A1A25B9620052B79C /* libc++.dylib */; };
 		3D1DDB6F1A25B98E0052B79C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1DDB6E1A25B98E0052B79C /* AVFoundation.framework */; };
 		3D9398EE19D9391100AEE6B1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9398ED19D9391100AEE6B1 /* CoreMedia.framework */; };
 		3DA167EF1A01CF1B002A591D /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA167EE1A01CF1B002A591D /* MenuViewController.m */; };
@@ -23,21 +20,21 @@
 		3DD0C75B19E7B6BD006F9103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD0C75A19E7B6BD006F9103 /* Foundation.framework */; };
 		3DDB8D951A314AFD00FA2C4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9398EB19D9390B00AEE6B1 /* CoreGraphics.framework */; };
 		3DDB8D971A314B2F00FA2C4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDB8D961A314B2F00FA2C4A /* SystemConfiguration.framework */; };
-		3DDB8D991A314B5B00FA2C4A /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDB8D981A314B5B00FA2C4A /* libstdc++.6.0.9.dylib */; };
 		3DDB8D9B1A314C3C00FA2C4A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDB8D9A1A314C3C00FA2C4A /* GLKit.framework */; };
 		CA30CBFE1AE4E53A00A78322 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAABD7A19D5644200C765E1 /* LaunchScreen.xib */; };
 		CA30CBFF1AE4E53C00A78322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAABD7519D5644200C765E1 /* Main.storyboard */; };
 		CA6859CB1B1BE47200B9577E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6859CA1B1BE47200B9577E /* image.png */; };
-		CA6C359B1BCE09A800F99F7D /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C359A1BCE09A800F99F7D /* SkyWay.framework */; settings = {ASSET_TAGS = (); }; };
+		CA6C359B1BCE09A800F99F7D /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C359A1BCE09A800F99F7D /* SkyWay.framework */; };
+		CAC6AFC51C27B4DF002C856D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC6AFC41C27B4DF002C856D /* libc++.tbd */; };
+		CAC6AFC71C27B4FA002C856D /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC6AFC61C27B4FA002C856D /* libicucore.tbd */; };
+		CAC6AFC91C27B505002C856D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC6AFC81C27B505002C856D /* libsqlite3.tbd */; };
+		CAC6AFCB1C27B50F002C856D /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC6AFCA1C27B50F002C856D /* libstdc++.6.0.9.tbd */; };
 		CAD2621C1B8E9EAF000D4782 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */; };
 		CAD2621D1B8E9EAF000D4782 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D1DDB5C1A2585CC0052B79C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		3D1DDB601A2588320052B79C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		3D1DDB621A258ABF0052B79C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		3D1DDB6A1A25B9620052B79C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		3D1DDB6E1A25B98E0052B79C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3D9398EB19D9390B00AEE6B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3D9398ED19D9391100AEE6B1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -59,10 +56,13 @@
 		3DB8290719FA09D2001041F8 /* PeersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeersListViewController.m; sourceTree = "<group>"; };
 		3DD0C75A19E7B6BD006F9103 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DDB8D961A314B2F00FA2C4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		3DDB8D981A314B5B00FA2C4A /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		3DDB8D9A1A314C3C00FA2C4A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		CA6859CA1B1BE47200B9577E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		CA6C359A1BCE09A800F99F7D /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyWay.framework; path = "SkyWay-iOS-Sample/frameworks/SkyWay.framework"; sourceTree = "<group>"; };
+		CAC6AFC41C27B4DF002C856D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CAC6AFC61C27B4FA002C856D /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		CAC6AFC81C27B505002C856D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CAC6AFCA1C27B50F002C856D /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -72,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC6AFCB1C27B50F002C856D /* libstdc++.6.0.9.tbd in Frameworks */,
+				CAC6AFC91C27B505002C856D /* libsqlite3.tbd in Frameworks */,
+				CAC6AFC71C27B4FA002C856D /* libicucore.tbd in Frameworks */,
+				CAC6AFC51C27B4DF002C856D /* libc++.tbd in Frameworks */,
 				CAD2621C1B8E9EAF000D4782 /* CoreVideo.framework in Frameworks */,
 				CAD2621D1B8E9EAF000D4782 /* VideoToolbox.framework in Frameworks */,
 				3D1DDB5D1A2585CC0052B79C /* AudioToolbox.framework in Frameworks */,
@@ -81,11 +85,7 @@
 				3DD0C75B19E7B6BD006F9103 /* Foundation.framework in Frameworks */,
 				3DDB8D9B1A314C3C00FA2C4A /* GLKit.framework in Frameworks */,
 				3DDB8D971A314B2F00FA2C4A /* SystemConfiguration.framework in Frameworks */,
-				3D1DDB6B1A25B9620052B79C /* libc++.dylib in Frameworks */,
 				CA6C359B1BCE09A800F99F7D /* SkyWay.framework in Frameworks */,
-				3D1DDB611A2588320052B79C /* libicucore.dylib in Frameworks */,
-				3D1DDB631A258ABF0052B79C /* libsqlite3.dylib in Frameworks */,
-				3DDB8D991A314B5B00FA2C4A /* libstdc++.6.0.9.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +143,10 @@
 		3DF7608D19D910FC0084F124 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CAC6AFCA1C27B50F002C856D /* libstdc++.6.0.9.tbd */,
+				CAC6AFC81C27B505002C856D /* libsqlite3.tbd */,
+				CAC6AFC61C27B4FA002C856D /* libicucore.tbd */,
+				CAC6AFC41C27B4DF002C856D /* libc++.tbd */,
 				CA6C359A1BCE09A800F99F7D /* SkyWay.framework */,
 				CAD2621A1B8E9EAF000D4782 /* CoreVideo.framework */,
 				CAD2621B1B8E9EAF000D4782 /* VideoToolbox.framework */,
@@ -152,10 +156,6 @@
 				3D9398ED19D9391100AEE6B1 /* CoreMedia.framework */,
 				3DD0C75A19E7B6BD006F9103 /* Foundation.framework */,
 				3DDB8D9A1A314C3C00FA2C4A /* GLKit.framework */,
-				3D1DDB6A1A25B9620052B79C /* libc++.dylib */,
-				3D1DDB601A2588320052B79C /* libicucore.dylib */,
-				3D1DDB621A258ABF0052B79C /* libsqlite3.dylib */,
-				3DDB8D981A314B5B00FA2C4A /* libstdc++.6.0.9.dylib */,
 				3DDB8D961A314B2F00FA2C4A /* SystemConfiguration.framework */,
 			);
 			name = Framework;
