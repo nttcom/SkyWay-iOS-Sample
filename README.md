@@ -15,7 +15,7 @@ static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
 ```
 
-##Installation of SkyWay.framework with CocoaPods
+## Installation of SkyWay.framework with CocoaPods
 Podfile
 
 ```
@@ -47,7 +47,7 @@ This application requires v0.2.0+ of SkyWay iOS SDK.
 static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
 ```
-##CocoaPodsを利用したSkyWay.frameworkのインストール
+## CocoaPodsを利用したSkyWay.frameworkのインストール
 Podfile
 
 ```
