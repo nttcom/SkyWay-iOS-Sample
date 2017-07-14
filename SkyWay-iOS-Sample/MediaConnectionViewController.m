@@ -662,7 +662,7 @@ typedef NS_ENUM(NSUInteger, AlertType)
 					 
 				 }
 				 
-				 PeersListViewController* vc = [[PeersListViewController alloc] initWithStyle:UITableViewStylePlain];
+				 PeersListViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"PeersList"];
 				 vc.items = [NSArray arrayWithArray:maItems];
 				 vc.callback = self;
 				 
