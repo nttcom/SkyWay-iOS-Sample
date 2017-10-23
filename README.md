@@ -9,7 +9,7 @@ If you are looking for the repository of ECLWebRTC, please see the [new examples
 すでに新しいSkyWayをご利用の方は、[新しいサンプルアプリ](https://github.com/skyway/skyway-ios-sdk/tree/master/examples)をご覧ください。
 
 # SkyWay iOS Sample
-Sample application of SkyWayiOSSDK
+Sample application of SkyWay iOS SDK
 
 ## How to build
  1. Register an account on [SkyWay](http://nttcom.github.io/skyway/) and get an API key
